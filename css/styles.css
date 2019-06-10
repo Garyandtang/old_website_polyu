@@ -840,3 +840,12 @@ ul.ul-edu {
     padding-left:2em;
     float: right;
   }
+  .visitormap{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    position: relative;
+    width: 300px;
+    height: auto; 
+    margin-bottom: 30px
+}
