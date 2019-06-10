@@ -498,7 +498,6 @@ body {
     color: white;
     opacity: 0;
     -webkit-transform: translateY(30px);
-
     transform: translateY(30px);
     transition: all 0.2s linear, 0.2s;
     -webkit-transition: all 0.2s linear, 0.2s;
@@ -507,7 +506,6 @@ body {
     -ms-transition: all 0.2s linear, 0.2s;
     -transition: all 0.2s linear, 0.2s;
   }
-
 .items .item .info h1 {
     margin-top: 16px;
     font-size: 1.1rem;
@@ -788,5 +786,57 @@ body {
         border-color: transparent #444 transparent transparent;
     }
 }
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
 
-	
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+papertitle {
+  font-family: 'Share Tech', Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700
+}
+ul.ul-edu {
+    list-style: none;
+  }
+  
+  /* ul.ul-edu li {20px
+    position: re20pxlative;
+    margin-top:120pxem;
+    padding: 0px 0px 4px 3px;
+  } */
+  ul.ul-edu img {
+    padding-left: -10px;
+    width: 5em;
+  }
+  
+  ul.ul-edu li .description p {
+    margin: 0;
+    margin-left: 2em;
+  }
+  
+  ul.ul-edu li .description p.course {
+    font-size: 1.2rem;
+  }
+  
+  ul.ul-edu li .description p.institution {
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.6);
+    padding-left:1em;
+  }
+  ul.ul-edu li .description a.time {
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.6);
+    padding-left:2em;
+    float: right;
+  }
