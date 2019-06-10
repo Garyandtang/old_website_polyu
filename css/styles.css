@@ -816,13 +816,13 @@ ul.ul-edu {
     padding: 0px 0px 4px 3px;
   } */
   ul.ul-edu img {
-    padding-left: -10px;
+    /* padding-left: 0px; */
     width: 5em;
   }
   
   ul.ul-edu li .description p {
     margin: 0;
-    margin-left: 2em;
+    margin-left: 3em;
   }
   
   ul.ul-edu li .description p.course {
