@@ -594,6 +594,31 @@
             <p>&copy; Copyright Jiawei Tang 2019</p>
         </div>
     </div>
+    <script>
+        var titleTime;
+        var OriginTitile = document.title;
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+                link.type = 'image/x-icon';
+                link.rel = 'shortcut icon';
+                link.href = '/favicon2.ico';
+                document.getElementsByTagName('head')[0].appendChild(link);
+                document.title = '|ω･) 哎呦~页面不见了~';
+                clearTimeout(titleTime);
+            } else {
+                var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+                link.type = 'image/x-icon';
+                link.rel = 'shortcut icon';
+                link.href = '/favicon.ico';
+                document.getElementsByTagName('head')[0].appendChild(link);
+                document.title = '(/≧▽≦)/ 呦吼~肥来啦！';
+                titleTime = setTimeout(function() {
+                    document.title = OriginTitile;
+                }, 1000);
+            }
+        });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
